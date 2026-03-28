@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nepal Travel Guide</title>
+    <style>
+    
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #d6dadd;
+            color: #1c1919;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins",sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+         header {
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+         header h1{
+          font-size: 50px;
+            margin: 0;
+            text-shadow: 2px 2px 5px #000;
+            
+         }
+
+         header p {
+            font-size: 20px;
+            margin-top: 10px;
+            text-shadow: 1px 1px 5px #000;
+        }
+
+
+        main {
+                 flex: 1;
+                 padding: 50px 20px;
+                 background: #f4f4f4;
+               }
+
+
+        .intro {
+             max-width: 800px;
+           margin: auto;
+           text-align: center;
+              margin-bottom: 50px;
+                }
+
+            .intro h2 {
+              margin-bottom: 15px;
+           }           
+
+
+
+        
+
+        .hero{
+            width: 100%;
+            height: 100vh;
+            background-image: url(1721894939_276597348_lumbini.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+  
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+             width: 100%;
+             padding: 20px;
+             justify-content: space-between;
+             display: flex;
+             
+  
+        }
+
+           .navbar a {
+            color:white;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: 0.3s;
+            text-shadow: 1px 1px 3px #000;
+            
+        }
+        .nav-left,
+
+        .nav-right {
+          display: flex;
+            gap: 25px;
+             }
+
+        
+
+        .navbar a:hover {
+            color: #030007;
+            transform: scale(1.2);
+            
+        }
+
+       
+          .btn {
+         padding: 8px 18px;
+         border-radius: 5px;
+          color: black;
+         transition: 0.3s ease;
+         background: transparent;
+         border: 2px solid #fff
+         }
+
+         
+         .btn:hover {
+         background: #fff
+         
+          }
+             .btn-outline {
+               background: transparent;
+                 border: 2px solid #fff
+                
+             }
+                
+              .btn-outline:hover {
+                background: #fff
+                    
+                      }
+        
+
+
+        
+        
+       
+        
+
+
+  
+         .attractions-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            
+        }
+
+        .card {
+            background-color: rgb(188, 192, 240);
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            margin: 1%;
+            text-align: center;
+        
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+          }
+
+            .card img {
+            
+            width: 100%;
+            height: 180px;
+             object-fit: cover;
+             border-radius: 10px;
+             margin: 0;
+                }
+
+          
+
+        
+
+       
+
+        .card-content h3 {
+           margin: 15px 0;
+            color: #e67e22;
+        }
+
+        .card-content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .card-content h4 {
+            margin-top: 0;
+            color: #4c4c83;
+            text-decoration: underline;
+
+        }
+        .footer {
+          background: #f4f5f2;
+          padding: 60px 40px 20px;
+          font-family: Arial, sans-serif;
+          color: #243c2f;
+         }
+
+         .footer-container {
+         display: flex;
+         justify-content: space-between;
+          gap: 100px;
+          flex-wrap: wrap;
+          }
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  color: #0b6b3a;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #478a6b;       
+}
+
+.footer-column ul li a:hover {
+  color: hsl(150, 75%, 3%);
+}
+
+
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+
+
+
+        
+
+
+
+       
+
+
+        
+
+        
+    </style>
+</head>
+<body>
+
+ <div class="hero">
+    <nav class="navbar">
+
+
+      <div class="nav-left">
+        <a href="Untitled-1.html">Home</a>
+        <a href="about.html">About Nepal</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="culture.html">Culture</a>
+        </div>
+
+        
+    </nav>
+    
+        <header>
+        <h1>Top Attractions</h1>
+        <p>Way To The Beauty Of Nepal</p>
+        </header>
+        </div>
+
+        <main>
+
+        <section class="intro">
+            <h2>Top Attractions of Nepal</h2>
+                <p>Nepal is famous for its beautiful mountains, ancient temples, and natural landscapes. From the world’s highest peak Mount Everest to peaceful places like Lumbini and Pokhara etc, Nepal offers many amazing attractions. These places reflect the country’s natural beauty, culture, and history.</p>
+            
+        </section>
+
+         <section id="attractions">
+        <div class="attractions-container">
+            <div class="card">
+                                <div class="card-content">
+                                  <img src="Mount-Everest.webp" alt="Mount Everest">
+                    <h3>Mount Everest</h3>
+                    <p>The world's tallest mountain and a must-see destination for trekkers and climbers from around the globe.</p><br><br>
+                    <h4><a href="https://en.wikipedia.org/wiki/Mount_Everest">Mount Everest</a></h4>
+                </div>
+            </div>
+            <div class="card">
+                                <div class="card-content">
+                                  <img src="Pashupatinath_Temple-2020.jpg" alt="Pashupatinath Temple">
+                    <h3>Pashupatinath Temple</h3>
+                    <p>A sacred Hindu temple on the banks of the Bagmati River, famous for its architecture and spiritual significance.</p><br><br>
+                    <h4><a href="https://en.wikipedia.org/wiki/Pashupatinath_Temple">Pashupatinath Temple</a></h4>
+                </div>
+            </div>
+            <div class="card">
+                               <div class="card-content">
+                                <img src="Boudhanath_121127-087.webp" alt="Boudhanath Stupa">
+                    <h3>Boudhanath Stupa</h3>
+                    <p>The largest stupas in the world and a UNESCO World Heritage Site, representing Nepal’s  Buddhist heritage.</p><br><br>
+                    <h4><a href="https://en.wikipedia.org/wiki/Boudha_Stupa">Boudhanath Stupa</a></h4>
+                </div>
+            </div>
+            <div class="card">
+                                <div class="card-content">
+                                  <img src="1721894939_276597348_lumbini.jpg" alt="Lumbini">
+                    <h3>Lumbini</h3>
+                    <p>The birthplace of Lord Buddha, attracting  tourists seeking peace and spirituality.</p><br>
+                    <h4> <a href="https://en.wikipedia.org/wiki/Lumbini">Lumbini</a></h4>
+                </div>
+            </div>
+                  <div class="card">
+            <div class="card-content">
+              <img src="Colorful-boats-in-Fewa-Taal-Pokhara.jpg" alt="Pokhara">
+                <h3>Pokhara</h3>
+                <p>Pokhara, the city of lakes, is the second-largest city of Nepal after Kathmandu.</p><br>
+                <h4> <a href="https://en.wikipedia.org/wiki/Pokhara">Pokhara</a></h4>
+            </div>
+        </div>
+        
+    </section>
+
+    </main>
+
+  
+    <footer class="footer">
+  <div class="footer-container">
+
+    
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <p>
+        At Nepal Travel Guide, we are dedicated to providing exceptional travel
+        experiences. Our expert team helps you explore Nepal's beautiful
+        landscapes and create unforgettable adventures.
+      </p>
+      
+    </div>
+
+ 
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="Untitled-1.html">Home</a></li>
+        <li><a href="about.html">About Nepal</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="culture.html">Culture</a></li>
+      
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <p>If you have any questions or need support, please feel free to contact us.</p>
+
+      <p>📍 Tulsipur, Nepal</p>
+      <p>✉️ nepaltravelguide@gmial.com</p>
+      <p>📞 WhatsApp on +977-9701959925</p>
+      <p>
+
+      
+    </div>
+
+
+    </div>
+
+  </div>
+
+
+  
+  <div class="footer-bottom">
+    <p>© Nepal Travel Guide 2026 Pvt Ltd.All Rights Reserved.<br>
+  </div>
+</footer>
+</body>
+</html>

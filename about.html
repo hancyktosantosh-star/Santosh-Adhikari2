@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nepal Travel Guide</title>
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #d6dadd;
+            color: #1c1919;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins",sans-serif;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+             width: 100%;
+             padding: 20px;
+             justify-content: space-between;
+             display: flex;
+             
+  
+        }
+
+           .navbar a {
+            color:white;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: 0.3s;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        .nav-left,
+        .nav-right {
+          display: flex;
+            gap: 25px;
+             }
+        .navbar a:hover {
+            color: #030007;
+            transform: scale(1.2);
+            
+        }
+
+       
+          .btn {
+         padding: 8px 18px;
+         border-radius: 5px;
+          color: black;
+         transition: 0.3s ease;
+         background: transparent;
+         border: 2px solid #fff
+         }
+
+         
+         .btn:hover {
+         background: #fff
+         
+          }
+             .btn-outline {
+               background: transparent;
+                 border: 2px solid #fff
+                
+             }
+                
+              .btn-outline:hover {
+                background: #fff
+                    
+                      }
+                      
+        
+        header {
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+            text-shadow: 2px 2px 5px #000;
+            
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+            text-shadow: 1px 1px 5px #000;
+        }
+        
+
+        .hero{
+            width: 100%;
+            height: 100vh;
+            background-image: url(nepal_tourism_f668c9fcfb.avif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+  
+
+         }
+         .section {
+    padding: 60px 10%;
+    background-color: #f4f5f2;
+}
+
+
+
+.section h2 {
+    color: #0b7a4b;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+.section ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+.facts {
+    list-style: none;
+    padding-left: 0;
+}
+
+.facts li {
+    margin-bottom: 8px;
+}
+
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+     margin-top: 0px;
+     
+     
+    
+
+}
+
+th, td {
+    border: 1px solid #060706;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #0b7a4b;
+    color: white;
+    font-size: 16px;
+}
+
+td {
+    font-size: 15px;
+}
+
+.table{
+  background-color:#f4f5f2; ;
+}
+
+
+
+tr:hover {
+    background-color: #e0f2f1;
+}
+
+.table h2{
+  padding: 10px 10%;
+  color: #0b7a4b;
+    margin-bottom: 15px;
+}
+
+.footer {
+          background: #f4f5f2;
+          padding: 60px 40px 20px;
+          font-family: Arial, sans-serif;
+          color: #243c2f;
+         }
+
+         .footer-container {
+         display: flex;
+         justify-content: space-between;
+          gap: 100px;
+          flex-wrap: wrap;
+          }
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  color: #0b6b3a;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #478a6b;       
+}
+
+.footer-column ul li a:hover {
+  color: hsl(150, 75%, 3%);
+}
+
+
+
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+
+
+
+
+        
+
+
+
+          
+
+        
+
+
+  
+
+        
+
+        
+
+
+
+
+    
+    
+       
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+ <nav class="navbar">
+
+
+      <div class="nav-left">
+        <a href="Untitled-1.html">Home</a>
+        <a href="about.html">About Nepal</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="culture.html">Culture</a>
+        </div>
+
+        
+    </nav>
+
+    <header>
+        <h1>Nepal</h1>
+        <p>A land of mountains, culture, and ancient traditions.</p>
+          
+      </header>
+
+      </div>
+      <section class="section">
+        <h2>Introduction</h2>
+        <p>
+            Nepal is a beautiful country located in South Asia, known for its
+             landscapes, rich cultural heritage, and warm hospitality.
+            It is home to the world's highest mountain and diverse traditions.
+        </p><br><br><br>
+    
+
+
+    
+        <h2>Geography & Nature</h2>
+        <p>
+            Nepal is divided into three main regions: the Himalayan mountains,
+            the hilly region, and the Terai plains. The country is famous for
+            snow-capped peaks, rivers, forests, and national parks.
+        </p><br><br><br>
+    
+
+  
+   
+        <h2>Culture & People</h2>
+        <p>
+            Nepal is home to more than 125 ethnic groups living together peacefully.
+            Each community has its own language, traditions, festivals, and
+            traditional dress, making Nepal culturally rich and diverse.
+        </p><br><br><br>
+    
+
+    
+        <h2>Religion & Heritage</h2>
+        <p>
+            Nepal is the birthplace of Lord Buddha and a sacred land for both
+            Hinduism and Buddhism. The country has many ancient temples,
+            stupas, and UNESCO World Heritage Sites.
+        </p><br><br><br>
+
+
+ 
+ 
+        <h2>Why Visit Nepal?</h2>
+        <ul>
+            <li>Adventure activities like trekking and hiking</li>
+            <li>Beautiful mountains and natural scenery</li>
+            <li>Rich culture and colorful festivals</li>
+            <li>Friendly and welcoming people</li>
+        </ul><br><br>
+
+        <h2>Popular Tourist Activities</h2>
+        <ul>
+           <li>Trekking in the Himalayas</li>
+           <li>Visiting heritage sites</li>
+           <li>Exploring national parks</li>
+           <li>Participating in festivals</li>
+           <li>Adventure sports</li>
+        </ul><br><br>
+
+
+    
+
+    
+   
+        <h2>Quick Facts</h2>
+        <ul class="facts">
+            <li><strong>Capital:</strong> Kathmandu</li>
+            <li><strong>Language:</strong> Nepali</li>
+            <li><strong>Currency:</strong> Nepalese Rupee</li>
+            <li><strong>Highest Peak:</strong> Mount Everest</li>
+        </ul><br><br><br>
+    </section>
+    
+
+    <div class="table">
+      
+    <table><h2>Geographical Regions of Nepal</h2>
+      <tr>
+        <th>Region</th>
+        <th>Altitude Range</th>
+        <th>Famous Places</th>
+        <th>Climate</th>
+      </tr>
+
+      <tr>
+        <td>Mountain</td>
+        <td>3000+</td>
+        <td>Everest, Mustang</td>
+        <td>Cold</td>
+      </tr>
+
+      <tr>
+        <td>Hill</td>
+        <td>1,000-3,000m</td>
+        <td>Kathmandu, Pokhara</td>
+        <td>Mid</td>
+      </tr>
+
+      <tr>
+        <td>Terai</td>
+        <td>Below 1,000m</td>
+        <td>Chitwan, Lumbini</td>
+        <td>Hot</td>
+      </tr>
+      
+    </table>
+
+    <table><h2> Major Festivals of Nepal</h2>
+      <tr>
+        <th>Festival</th>
+        <th>Religion</th>
+        <th>Month</th>
+        <th>Description</th>
+      </tr>
+
+      <tr>
+        <td>Dashain</td>
+        <td>Hindu</td>
+        <td>Sept-Oct</td>
+        <td>Victory of good over evil</td>
+      </tr>
+
+      <tr>
+        <td>Tihar</td>
+        <td>Hindu</td>
+        <td>Oct-Nov</td>
+        <td>Festivals of lights</td>
+      </tr>
+
+      <tr>
+        <td>Budha Jayanti</td>
+        <td>Buddhist</td>
+        <td>May</td>
+        <td>Birth Of Lord Buddha</td>
+      </tr>
+      
+    </table>
+
+    <table><h2> UNESCO World Heritage Sites</h2>
+      <tr>
+        <th>Site</th>
+        <th>Location</th>
+        <th>Type</th>
+      </tr>
+
+      <tr>
+        <td>Pashupatinath</td>
+        <td>Kathmandu</td>
+        <td>Temple</td>
+      </tr>
+
+      <tr>
+        <td>Boudhanath</td>
+        <td>Kathmandu</td>
+        <td>Stupa</td>
+      </tr>
+
+      <tr>
+        <td>Lumbini</td>
+        <td>Rupandehi</td>
+        <td>Religious</td>
+      </tr>
+      
+    </table>
+     ﾠ
+    </div>
+
+
+ <footer class="footer">
+   <div class="footer-container">
+
+    
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <p>
+        At Nepal Travel Guide, we are dedicated to providing exceptional travel
+        experiences. Our expert team helps you explore Nepal's beautiful
+        landscapes and create unforgettable adventures.
+      </p>
+      
+    </div>
+
+ 
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="Untitled-1.html">Home</a></li>
+        <li><a href="about.html">About Nepal</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="culture.html">Culture</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <p>If you have any questions or need support, please feel free to contact us.</p>
+
+      <p>📍 Tulsipur, Nepal</p>
+      <p>✉️ nepaltravelguide@gmial.com</p>
+      <p>📞 WhatsApp on +977-9701959925</p>
+
+      
+    </div>
+
+
+    </div>
+
+  </div>
+
+  
+  <div class="footer-bottom">
+    <p>© Nepal Travel Guide 2026 Pvt Ltd.All Rights Reserved.<br>
+      
+    </p>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
+
+                    
+                      
+
+
+
+        
+    
+
+    
+
+    
+
+
+   
+    
+</body>
+</html>
+ 
+    
+</body>
+</html>
+
+
+
+
+    

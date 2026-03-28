@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nepal Travel Guide</title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #d6dadd;
+            color: #1c1919;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+    
+        
+
+        }
+
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins",sans-serif;
+        }
+
+        
+
+
+
+
+    
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+             width: 100%;
+             padding: 20px;
+             justify-content: space-between;
+             display: flex;
+             
+  
+        }
+
+           .navbar a {
+            color:white;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: 0.3s;
+            text-shadow: 1px 1px 3px #000;
+            
+        }
+        .nav-left,
+
+        .nav-right {
+          display: flex;
+            gap: 25px;
+             }
+
+        
+
+        .navbar a:hover {
+            color: #030007;
+            transform: scale(1.2);
+            
+        }
+
+       
+          .btn {
+         padding: 8px 18px;
+         border-radius: 5px;
+          color: black;
+         transition: 0.3s ease;
+         background: transparent;
+         border: 2px solid #fff
+         }
+
+         
+         .btn:hover {
+         background: #fff
+         
+          }
+             .btn-outline {
+               background: transparent;
+                 border: 2px solid #fff
+                
+             }
+                
+              .btn-outline:hover {
+                background: #fff
+                    
+                      }
+        
+
+
+        
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .hero {
+         width: 100%;
+         height: 100vh;
+         background-image: url("Pashupatinath_Temple-2020.jpg");
+         background-size: cover;
+         background-position: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-repeat: no-repeat;
+         position: relative;
+}
+
+      header {
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+            text-shadow: 2px 2px 5px #000;
+            
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+            text-shadow: 1px 1px 5px #000;
+        }
+
+
+main {
+    flex: 1;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+
+.intro {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro h2 {
+    margin-bottom: 15px;
+}
+
+
+.culture-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: rgb(188, 192, 240);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 1%;
+    
+}
+
+.card:hover{
+     transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0;
+    
+    
+}
+
+
+.card h3 {
+    margin: 15px 0;
+    color: #e67e22;
+}
+
+.card p {
+    padding: 0 15px 20px;
+       }
+         .card h4 {
+            margin-top: 0;
+            color: #4c4c83;
+            text-decoration: underline;
+            
+
+            }
+
+
+       
+        #about p {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+         
+         .footer {
+          background: #f4f5f2;
+          padding: 60px 40px 20px;
+          font-family: Arial, sans-serif;
+          color: #243c2f;
+         }
+
+         .footer-container {
+         display: flex;
+         justify-content: space-between;
+          gap: 100px;
+          flex-wrap: wrap;
+          }
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  color: #0b6b3a;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #478a6b;       
+}
+
+.footer-column ul li a:hover {
+  color: hsl(150, 75%, 3%);
+}
+
+
+
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+
+
+
+        
+
+
+
+          
+
+
+
+    
+
+        
+    </style>
+</head>
+<body>
+
+ <div class="hero">
+   <nav class="navbar">
+
+
+      <div class="nav-left">
+        <a href="Untitled-1.html">Home</a>
+        <a href="about.html">About Nepal</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="culture.html">Culture</a>
+        </div>
+
+        
+    </nav>
+
+    
+        <header>
+            <h1>Culture of Nepal</h1>
+            <p>Unity in Diversity</p>
+            </header>
+
+        </div>
+    
+
+    
+    <main>
+
+   
+        <section class="intro">
+            <h2>About Nepalese Culture</h2>
+            <p>
+                Nepal is a culturally rich country with diverse traditions, languages,
+                festivals, and ethnic groups. Each region has its own unique lifestyle
+                and customs.
+            </p>
+        </section>
+
+        
+        <section class="culture-cards">
+
+            <div class="card">
+                <img src="Dashain-Tika-Jamara.jpg" alt="Festival">
+                <h3>Festivals</h3>
+                <p>Dashain, Tihar, Holi, and Teej are celebrated with joy and unity.</p>
+                <h4><a href="https://en.wikipedia.org/wiki/List_of_festivals_in_Nepal">Festivals</a></h4>
+            </div>
+
+            <div class="card">
+                <img src="0000069_limbu-daura-suruwal_550.jpeg" alt="Dress">
+                <h3>Traditional Dress</h3>
+                <p>Daura Suruwal and Gunyo Cholo represent Nepalese identity.</p>
+                <h4><a href="https://thewondernepal.com/articles/nepali-attire-traditional-dresses-and-their-meanings/">Traditional Dress</a></h4>
+            </div>
+
+            <div class="card">
+                <img src="dal-bhat-tarkari-(2).webp" alt="Food">
+                <h3>Food Culture</h3>
+                <p>Dal Bhat and Momo are the most popular foods in Nepal.</p><br>
+                <h4><a href="https://en.wikipedia.org/wiki/Nepalese_cuisine">Food Culture</a></h4>
+            </div>
+
+            <div class="card">
+                <img src="Pashupatinath_Temple-2020.jpg" alt="Religion">
+                <h3>Religion</h3>
+                <p>Nepal is the birthplace of Buddha and home to Hinduism.</p><br>
+                <h4><a href="https://en.wikipedia.org/wiki/Religion_in_Nepal">Religion</a></h4>
+            </div>
+
+            <div class="card">
+                <img src="Maruni-dance.jpg" alt="Dance">
+                <h3>Music & Dance</h3>
+                <p>Traditional dances like Maruni and  Music like Dohori .</p>
+                <h4><a href="https://thewondernepal.com/articles/the-role-of-music-and-dance-in-nepali-traditions/">Music & Dance</a></h4>
+            </div>
+            <div class="card">
+                <img src="panche_baja.jpg" alt="Instruments">
+                <h3>Instruments</h3>
+                <p>Traditional Instruments like panje baja and Sarangi.</p>
+                <h4><a href="https://en.wikipedia.org/wiki/List_of_Nepali_musical_instruments">Instruments</a></h4>
+            </div>
+
+            <div class="card">
+                <img src="b5787fbe3597447a1072f33e34c67c04.jpg" alt="Ethnic">
+                <h3>Ethnic Diversity</h3>
+                <p>More than 142  ethnic groups live together peacefully in Nepal.</p>
+                <h4><a href="https://en.wikipedia.org/wiki/Ethnic_groups_in_Nepal">Ethnic Diversity</a></h4>
+            </div>
+
+            <div class="card">
+                <img src="ChatGPT Image Jan 24, 2026, 07_30_19 PM.png" alt="Language">
+                <h3>Language Of Nepal</h3>
+                <p>More than 124 languages are spoken in Nepal.</p>
+                <h4><a href="https://en.wikipedia.org/wiki/Languages_of_Nepal">Language of Nepal</a></h4>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+   <footer class="footer">
+  <div class="footer-container">
+
+    
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <p>
+        At Nepal Travel Guide, we are dedicated to providing exceptional travel
+        experiences. Our expert team helps you explore Nepal's beautiful
+        landscapes and create unforgettable adventures.
+      </p>
+      
+    </div>
+
+ 
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="Untitled-1.html">Home</a></li>
+        <li><a href="about.html">About Nepal</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="culture.html">Culture</a></li>
+
+      </ul>
+    </div>
+
+   
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <p>If you have any questions or need support, please feel free to contact us.</p>
+
+      <p>📍 Tulsipur, Nepal</p>
+      <p>✉️ nepaltravelguide@gmial.com</p>
+      <p>📞 WhatsApp on +977-9701959925</p>
+      <p>
+
+      
+    </div>
+
+
+    </div>
+
+  </div>
+
+  
+  <div class="footer-bottom">
+    <p>© Nepal Travel Guide 2026 Pvt Ltd.All Rights Reserved.<br>
+        
+    </p>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
+
+
+    
